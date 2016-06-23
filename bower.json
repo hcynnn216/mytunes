@@ -8,9 +8,9 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "jquery": "~2.0.3",
-    "underscore": "~1.5.2",
-    "backbone": "~1.0.0"
+    "jquery": "~3.0.0",
+    "underscore": "~1.8.3",
+    "backbone": "~1.3.3"
   },
   "ignore": [
     "**/.*",
@@ -18,5 +18,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "resolutions": {
+    "underscore": "~1.8.3",
+    "jquery": "~3.0.0",
+    "backbone": "~1.3.3"
+  }
 }
