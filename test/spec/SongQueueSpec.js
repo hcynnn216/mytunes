@@ -66,13 +66,14 @@ describe('SongQueue', function() {
     });
   });
 
-  xdescribe('when a song is removed from the queue', function() {
-    xit('removes the song', function() {
-      removeSpy = sinon.spy(SongQueue.prototype, 'remove');
+  describe('when a song is removed from the queue', function() {
+    it('removes the song', function() {
+      // removeSpy = sinon.spy(SongQueue.prototype, 'remove');
       var songQueue = new SongQueue(songData1);
-      songQueue.at(0).remove();
-      expect(removeSpy).to.have.been.called;
-      SongQueue.prototype.remove.restore();
+      songQueue.at(0).dequeue();
+      //  expect(removeSpy).to.have.been.called;
+      // SongQueue.prototype.remove.restore();
+      expect(songQueue.at(0)).to.equal(undefined);
     });
   });
 
